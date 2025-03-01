@@ -8964,31 +8964,3 @@ img.sppb-element-lazy.sppb-element-loaded{
     background-color:#f1f3f5
 }
 
-
-
-
-.map-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio za mobilne uređaje */
-    overflow: hidden;
-}
-
-/* Za veće ekrane, povećaj visinu */
-@media (min-width: 1024px) {
-    .map-container {
-        height: 420px; /* Fiksna visina na desktopu */
-        padding-bottom: 0; /* Uklanja padding hack */
-    }
-    .map-container iframe {
-        height: 100%;
-    }
-}
-
-.map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
